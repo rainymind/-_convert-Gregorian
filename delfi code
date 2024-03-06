@@ -1,0 +1,25 @@
+program ConvertDate;
+
+uses
+  System.SysUtils, DateUtils;
+
+function GregorianToPersian(GregorianDate: TDateTime): string;
+var
+  Year, Month, Day: Word;
+  PersianYear, PersianMonth, PersianDay: Word;
+begin
+  DecodeDate(GregorianDate, Year, Month, Day);
+  DecodeDatePersian(GregorianDate, PersianYear, PersianMonth, PersianDay);
+  Result := Format('%d/%d/%d', [PersianYear, PersianMonth, PersianDay]);
+end;
+
+var
+  GregorianDate: TDateTime;
+begin
+  // Input Gregorian date
+  GregorianDate := EncodeDate(2024, 3, 6); // Example: March 6, 2024
+  
+  // Convert Gregorian to Persian (Shamsi)
+  Writeln('Gregorian Date: ', FormatDateTime('yyyy/mm/dd', GregorianDate));
+  Writeln('Persian Date: ', GregorianToPersian(GregorianDate));
+end.
