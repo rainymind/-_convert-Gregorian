@@ -15,7 +15,7 @@ end;
 var
   GregorianDate: TDateTime;
 begin
-  // Input Gregorian date
+  // Input Gregorian date000020
   GregorianDate := EncodeDate(2024, 3, 6); // Example: March 16, 2024 ;
   
   // Convert Gregorian to Persian (Shamsi)
