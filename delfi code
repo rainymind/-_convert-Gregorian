@@ -1,3 +1,4 @@
+// 00002011111111111111111
 program ConvertDate;
 uses
   System.SysUtils, DateUtils;
@@ -15,7 +16,7 @@ end;
 var
   GregorianDate: TDateTime;
 begin
-  // Input Gregorian date00002011111111111111111
+  // Input Gregorian date
   GregorianDate := EncodeDate(2024, 3, 6); // Example: March 16, 2024 ;
   
   // Convert Gregorian to Persian (Shamsi)
