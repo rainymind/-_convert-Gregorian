@@ -1,4 +1,4 @@
-// 00002011111111111111111
+// 0000
 program ConvertDate;
 uses
   System.SysUtils, DateUtils;
